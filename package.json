@@ -1,0 +1,14 @@
+{
+  "name": "htmx-ext-hash-select",
+  "version": "2.0.0",
+  "description": "Specify the HTMX select attribute using the URL fragment identifier.",
+  "main": "hash-select.js",
+  "scripts": {
+    "test": "echo 'Open example.html in a modern browser.' && exit 1"
+  },
+  "author": "Michael Bradley <michael@brooksb.dev>",
+  "license": "MIT",
+  "devDependencies": {
+    "htmx.org": "^2.0.4"
+  }
+}

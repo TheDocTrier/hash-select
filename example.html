@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <script src="https://unpkg.com/htmx.org@2"></script>
+
+    <script src="hash-select.js"></script>
+
+    <style>
+body {
+  max-width: 35ch;
+  margin: auto;
+}
+#red {
+  border: red solid 4px;
+  padding: 1ch;
+}
+#both {
+  border: black solid 4px;
+  padding: 1ch;
+}
+    </style>
+  </head>
+
+  <body hx-ext="hash-select" hx-select="main > *">
+    <h1>Test Page</h1>
+
+    <main>
+      <div id="red">
+        <button hx-get="#red" hx-trigger="click" hx-target="closest div">
+          Nest RED!
+        </button>
+      </div>
+
+      <div id="both">
+        <button hx-get="" hx-trigger="click" hx-target="closest div">
+          Nest both!
+        </button>
+      </div>
+    </main>
+  </body>
+</html>
